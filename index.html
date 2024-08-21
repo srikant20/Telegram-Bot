@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telegram Bot</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center">M͠ʀ. Տʀɪᴋᴀᴀɴᴛ™✨ Bot</h1>
+    <div id="form-section">
+      <form id="telegram-form">
+        <div class="form-group">
+          <label for="bot_token">Bot Token:</label>
+          <input
+            type="text"
+            id="bot_token"
+            placeholder="eg: 123456789:ABCDEF_GHIJKL_MNOPQR_STUVWXYZ"
+            name="bot_token"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="chat_id">Chat ID (or Username):</label>
+          <input
+            type="text"
+            id="chat_id"
+            placeholder="eg: 987654321 or @IndianHeros_Clan"
+            name="chat_id"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="message_id">Reply To Message ID (Optional):</label>
+          <input type="text" id="message_id" name="message_id" />
+        </div>
+        <div class="form-group">
+          <label for="message_text">Message Text:</label>
+          <textarea id="message_text" name="message_text" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="url">URL (Optional):</label>
+          <input type="text" id="url" name="url" />
+        </div>
+        <div class="form-group">
+          <label for="comment">Comment (optional):</label>
+          <input type="text" id="comment" name="comment" />
+        </div>
+        <div class="form-group">
+          <label for="media_file">Media File (image, video, or audio):</label>
+          <input type="file" id="media_file" name="media_file" />
+        </div>
+        <div class="form-group">
+          <label for="caption">Caption (optional):</label>
+          <input type="text" id="caption" name="caption" />
+        </div>
+        <button type="submit">Send</button>
+      </form>
+      <p id="response-message"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
